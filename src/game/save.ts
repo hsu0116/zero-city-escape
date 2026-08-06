@@ -1,18 +1,21 @@
-export type GamePhase = "landing" | "intro" | "receipts" | "route" | "gates" | "success";
+import type { ScanSlot } from "./p01";
+
+export type GamePhase = "landing" | "intro" | "investigation" | "projection" | "success";
 
 export type SavedGame = {
   phase: GamePhase;
-  selectedReceipts: string[];
-  route: string[];
-  gateIndex: number;
-  mapRotation: number;
+  activeEvidence: "receipts" | "deeds" | "ledger" | "manual";
+  viewedEvidence: string[];
+  scanSlots: ScanSlot[];
+  wordInput: string;
   attempts: number;
+  hintsOpened: number;
   updatedAt: number;
 };
 
 const DB_NAME = "zero-city-escape";
 const STORE_NAME = "game-saves";
-const SAVE_KEY = "episode-01-p01";
+const SAVE_KEY = "episode-01-p01-hard-v2";
 
 function openDatabase(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {

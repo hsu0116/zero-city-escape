@@ -1,109 +1,124 @@
 export type Direction = "N" | "E" | "S" | "W";
-export type Turn = "left" | "straight" | "right";
 
 export type Receipt = {
   id: string;
-  stationId: string;
-  station: string;
-  timeLabel: string;
-  minutesFromBell: number;
-  seal: string;
-};
-
-export type MapNode = {
-  id: string;
   label: string;
-  shortLabel: string;
-  x: number;
-  y: number;
-  kind: "start" | "station" | "decoy";
+  amount: number;
+  entryMark: string;
+  exitMark: string;
+  print: string;
 };
 
-export type MapEdge = { from: string; to: string; blocked?: boolean };
+export type Property = {
+  id: string;
+  name: string;
+  shortName: string;
+  tariffs: [number, number, number];
+  buildings: 0 | 1 | 2;
+  mortgaged: boolean;
+  incoming: Direction;
+  district: string;
+};
+
+export type ScanSlot = {
+  receiptId: string;
+  propertyId: string;
+  rotation: number;
+};
+
+export type ScanValidation = {
+  solved: boolean;
+  chain: boolean;
+  rents: boolean;
+  orientations: boolean;
+};
 
 export const RECEIPTS: Receipt[] = [
-  { id: "r-cloud", stationId: "cloud", station: "구름 정거장", timeLabel: "종 후 11분", minutesFromBell: 11, seal: "구름" },
-  { id: "r-camellia", stationId: "camellia", station: "동백 시장", timeLabel: "종 전 18분", minutesFromBell: -18, seal: "꽃" },
-  { id: "r-bank", stationId: "bank", station: "중앙은행", timeLabel: "종 후 17분", minutesFromBell: 17, seal: "왕관" },
-  { id: "r-clock", stationId: "clock", station: "시계 광장", timeLabel: "종 전 6분", minutesFromBell: -6, seal: "시계" },
-  { id: "r-harbor", stationId: "harbor", station: "항만 창고", timeLabel: "종 후 3분", minutesFromBell: 3, seal: "닻" },
+  { id: "r-b", label: "영수증 B", amount: 42, entryMark: "□", exitMark: "✕", print: "사각 파임 / 교차 절취" },
+  { id: "r-d", label: "영수증 D", amount: 18, entryMark: "✕", exitMark: "◆", print: "교차 파임 / 검표 마감" },
+  { id: "r-a", label: "영수증 A", amount: 22, entryMark: "○", exitMark: "≋", print: "원형 파임 / 물결 절취" },
+  { id: "r-c", label: "영수증 C", amount: 30, entryMark: "▲", exitMark: "○", print: "삼각 파임 / 원형 절취" },
+  { id: "r-e", label: "영수증 E", amount: 7, entryMark: "≋", exitMark: "□", print: "물결 파임 / 사각 절취" },
 ];
 
-export const CORRECT_RECEIPT_ORDER = [...RECEIPTS]
-  .sort((a, b) => a.minutesFromBell - b.minutesFromBell)
-  .map((receipt) => receipt.id);
-
-export const MAP_NODES: MapNode[] = [
-  { id: "impound", label: "압류역", shortLabel: "출발", x: 4, y: 4, kind: "start" },
-  { id: "camellia", label: "동백 시장", shortLabel: "동백", x: 3, y: 4, kind: "station" },
-  { id: "clock", label: "시계 광장", shortLabel: "시계", x: 2, y: 4, kind: "station" },
-  { id: "harbor", label: "항만 창고", shortLabel: "항만", x: 2, y: 3, kind: "station" },
-  { id: "cloud", label: "구름 정거장", shortLabel: "구름", x: 1, y: 3, kind: "station" },
-  { id: "bank", label: "중앙은행", shortLabel: "은행", x: 1, y: 2, kind: "station" },
-  { id: "tax", label: "세금 골목", shortLabel: "세금", x: 4, y: 3, kind: "decoy" },
-  { id: "hotel", label: "호텔 거리", shortLabel: "호텔", x: 3, y: 3, kind: "decoy" },
-  { id: "park", label: "공원 지구", shortLabel: "공원", x: 3, y: 2, kind: "decoy" },
+export const PROPERTIES: Property[] = [
+  { id: "camellia", name: "동백 시장", shortName: "동백", tariffs: [10, 18, 30], buildings: 2, mortgaged: false, incoming: "E", district: "꽃잎 구역" },
+  { id: "clock", name: "시계 광장", shortName: "시계", tariffs: [12, 22, 36], buildings: 1, mortgaged: false, incoming: "N", district: "톱니 구역" },
+  { id: "harbor", name: "항만 창고", shortName: "항만", tariffs: [14, 26, 42], buildings: 0, mortgaged: true, incoming: "W", district: "파도 구역" },
+  { id: "cloud", name: "구름 정거장", shortName: "구름", tariffs: [10, 22, 42], buildings: 2, mortgaged: false, incoming: "S", district: "점선 구역" },
+  { id: "bank", name: "중앙은행", shortName: "은행", tariffs: [14, 18, 36], buildings: 1, mortgaged: false, incoming: "E", district: "격자 구역" },
+  { id: "relay", name: "전파 교환소", shortName: "전파", tariffs: [12, 26, 30], buildings: 0, mortgaged: false, incoming: "N", district: "안테나 구역" },
 ];
 
-export const MAP_EDGES: MapEdge[] = [
-  { from: "impound", to: "camellia" },
-  { from: "camellia", to: "clock" },
-  { from: "clock", to: "harbor" },
-  { from: "harbor", to: "cloud" },
-  { from: "cloud", to: "bank" },
-  { from: "impound", to: "tax", blocked: true },
-  { from: "camellia", to: "hotel", blocked: true },
-  { from: "clock", to: "hotel", blocked: true },
-  { from: "harbor", to: "hotel", blocked: true },
-  { from: "hotel", to: "park", blocked: true },
-  { from: "park", to: "bank", blocked: true },
+export const START_MARK = "▲";
+export const END_MARK = "◆";
+export const WORD_ANSWER = "무소유";
+
+export const SOLUTION: ScanSlot[] = [
+  { receiptId: "r-c", propertyId: "camellia", rotation: 90 },
+  { receiptId: "r-a", propertyId: "clock", rotation: 0 },
+  { receiptId: "r-e", propertyId: "harbor", rotation: 270 },
+  { receiptId: "r-b", propertyId: "cloud", rotation: 180 },
+  { receiptId: "r-d", propertyId: "bank", rotation: 90 },
 ];
 
-export const CORRECT_ROUTE = ["impound", "camellia", "clock", "harbor", "cloud", "bank"];
-
-export const GATE_STEPS: Array<{ station: string; incoming: Direction; outgoing: Direction; answer: Turn }> = [
-  { station: "동백 시장", incoming: "N", outgoing: "W", answer: "left" },
-  { station: "시계 광장", incoming: "W", outgoing: "W", answer: "straight" },
-  { station: "항만 창고", incoming: "W", outgoing: "N", answer: "right" },
-  { station: "구름 정거장", incoming: "N", outgoing: "W", answer: "left" },
-  { station: "중앙은행", incoming: "W", outgoing: "N", answer: "right" },
-];
-
-const DIRECTION_ANGLE: Record<Direction, number> = { N: 0, E: 90, S: 180, W: 270 };
-
-export function directionAngle(direction: Direction): number {
-  return DIRECTION_ANGLE[direction];
-}
+export const EMPTY_SCAN_SLOTS: ScanSlot[] = Array.from({ length: 5 }, () => ({
+  receiptId: "",
+  propertyId: "",
+  rotation: 0,
+}));
 
 export function normalizeRotation(rotation: number): number {
   return ((rotation % 360) + 360) % 360;
 }
 
-export function requiredMapRotation(incoming: Direction): number {
-  return normalizeRotation(360 - directionAngle(incoming));
+export function currentRent(property: Property): number {
+  const regular = property.tariffs[property.buildings];
+  return property.mortgaged ? regular / 2 : regular;
 }
 
-export function relativeTurn(incoming: Direction, outgoing: Direction): Turn | "back" {
-  const delta = normalizeRotation(directionAngle(outgoing) - directionAngle(incoming));
-  if (delta === 270) return "left";
-  if (delta === 0) return "straight";
-  if (delta === 90) return "right";
-  return "back";
+export function validateReceiptChain(slots: ScanSlot[]): boolean {
+  if (slots.length !== SOLUTION.length) return false;
+  let expected = START_MARK;
+  for (const slot of slots) {
+    const receipt = RECEIPTS.find((item) => item.id === slot.receiptId);
+    if (!receipt || receipt.entryMark !== expected) return false;
+    expected = receipt.exitMark;
+  }
+  return expected === END_MARK && new Set(slots.map((slot) => slot.receiptId)).size === slots.length;
 }
 
-export function isCorrectReceiptOrder(ids: string[]): boolean {
-  return ids.length === CORRECT_RECEIPT_ORDER.length && ids.every((id, index) => id === CORRECT_RECEIPT_ORDER[index]);
+export function validateRentAssignments(slots: ScanSlot[]): boolean {
+  if (slots.length !== SOLUTION.length) return false;
+  if (new Set(slots.map((slot) => slot.propertyId)).size !== slots.length) return false;
+  return slots.every((slot) => {
+    const receipt = RECEIPTS.find((item) => item.id === slot.receiptId);
+    const property = PROPERTIES.find((item) => item.id === slot.propertyId);
+    return Boolean(receipt && property && receipt.amount === currentRent(property));
+  });
 }
 
-export function isOpenEdge(from: string, to: string): boolean {
-  return MAP_EDGES.some((edge) => !edge.blocked && ((edge.from === from && edge.to === to) || (edge.from === to && edge.to === from)));
+export function validateOrientations(slots: ScanSlot[]): boolean {
+  if (slots.length !== SOLUTION.length) return false;
+  return slots.every((slot, index) => {
+    const expected = SOLUTION[index];
+    return slot.receiptId === expected.receiptId
+      && slot.propertyId === expected.propertyId
+      && normalizeRotation(slot.rotation) === expected.rotation;
+  });
 }
 
-export function canExtendRoute(route: string[], next: string): boolean {
-  const current = route[route.length - 1];
-  return Boolean(current && !route.includes(next) && isOpenEdge(current, next));
+export function validateScan(slots: ScanSlot[]): ScanValidation {
+  const chain = validateReceiptChain(slots);
+  const rents = validateRentAssignments(slots);
+  const orientations = chain && rents && validateOrientations(slots);
+  return { solved: chain && rents && orientations, chain, rents, orientations };
 }
 
-export function isCorrectRoute(route: string[]): boolean {
-  return route.length === CORRECT_ROUTE.length && route.every((id, index) => id === CORRECT_ROUTE[index]);
+export function normalizeWord(value: string): string {
+  return value.normalize("NFC").replace(/\s+/g, "").toLowerCase();
+}
+
+export function isCorrectWord(value: string): boolean {
+  return normalizeWord(value) === WORD_ANSWER;
 }
