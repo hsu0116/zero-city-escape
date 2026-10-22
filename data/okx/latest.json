@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "source": "OKX",
-  "updatedAt": "2026-10-22T12:11:39.697Z",
-  "updatedAtKST": "2026-10-22 21:11:39",
+  "updatedAt": "2026-10-22T12:16:41.514Z",
+  "updatedAtKST": "2026-10-22 21:16:41",
   "timezone": "Asia/Seoul",
   "status": "ok",
   "requestedSymbols": [
@@ -25,8 +25,8 @@
   "oiChangeUnit": "percent",
   "results": [
     {
-      "currentOI": 3044143.890000011,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 3047629.8600000115,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -4019,14 +4019,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 81567.9,
-            "high": 81620.5,
-            "low": 81477.3,
-            "close": 81576.8,
-            "volume": 42767.8
-          },
-          {
             "ts": 1792492200000,
             "open": 81576.8,
             "high": 81580.8,
@@ -5609,15 +5601,23 @@
             "low": 81708.2,
             "close": 81712.1,
             "volume": 64514.07
+          },
+          {
+            "ts": 1792670400000,
+            "open": 81712.2,
+            "high": 81827.9,
+            "low": 81675.6,
+            "close": 81760.7,
+            "volume": 92855.67
           }
         ]
       },
-      "time": "2026-10-22 21:11:27",
+      "time": "2026-10-22 21:16:28",
       "symbol": "BTC-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
       "maxScore": 12,
-      "price": 81712.1,
+      "price": 81760.7,
       "trend": {
         "mode": "NEUTRAL",
         "close": 81712.1,
@@ -5643,26 +5643,26 @@
       },
       "trigger": {
         "ok": false,
-        "close": 81712.1,
-        "ema20": 82060.91338759415,
-        "atr": 166.05994626930547,
+        "close": 81760.7,
+        "ema20": 82032.32163620897,
+        "atr": 165.07709779569936,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.5492065096556136,
+        "volumeRatio": 0.7970763052066804,
         "volumeOk": false,
         "prevHigh": 82154.3,
-        "prevLow": 81800.8
+        "prevLow": 81708.2
       },
-      "funding": 0.0000504955627463,
-      "oiChange": -0.04156222491490391,
+      "funding": 0.0000500574315927,
+      "oiChange": 0.11451396931176916,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 5984057.440000017,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 5985940.510000017,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -9655,14 +9655,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 2387.91,
-            "high": 2389.9,
-            "low": 2383.73,
-            "close": 2386.82,
-            "volume": 100752.18
-          },
-          {
             "ts": 1792492200000,
             "open": 2386.81,
             "high": 2386.84,
@@ -11245,15 +11237,23 @@
             "low": 2397.55,
             "close": 2399.17,
             "volume": 197061.99
+          },
+          {
+            "ts": 1792670400000,
+            "open": 2399.17,
+            "high": 2403.48,
+            "low": 2398.7,
+            "close": 2401.24,
+            "volume": 183455.82
           }
         ]
       },
-      "time": "2026-10-22 21:11:28",
+      "time": "2026-10-22 21:16:29",
       "symbol": "ETH-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
       "maxScore": 12,
-      "price": 2399.17,
+      "price": 2401.24,
       "trend": {
         "mode": "NEUTRAL",
         "close": 2399.17,
@@ -11279,26 +11279,26 @@
       },
       "trigger": {
         "ok": false,
-        "close": 2399.17,
-        "ema20": 2411.461811451654,
-        "atr": 6.877377968564928,
+        "close": 2401.24,
+        "ema20": 2410.488305592618,
+        "atr": 6.727565442725012,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.5519187020030527,
+        "volumeRatio": 0.5215082947413212,
         "volumeOk": false,
-        "prevHigh": 2412.24,
-        "prevLow": 2400.06
+        "prevHigh": 2411.24,
+        "prevLow": 2397.55
       },
-      "funding": 0.0000051086051785,
-      "oiChange": 0.07351001033790716,
+      "funding": 0.000005910942768,
+      "oiChange": 0.03146811371514957,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 2981994.16,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 2975319.670000001,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -15291,14 +15291,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 104.2,
-            "high": 104.24,
-            "low": 103.84,
-            "close": 103.97,
-            "volume": 48507.3
-          },
-          {
             "ts": 1792492200000,
             "open": 103.98,
             "high": 104.04,
@@ -16881,15 +16873,23 @@
             "low": 104.4,
             "close": 104.4,
             "volume": 32552.65
+          },
+          {
+            "ts": 1792670400000,
+            "open": 104.41,
+            "high": 104.55,
+            "low": 104.15,
+            "close": 104.25,
+            "volume": 65001.4
           }
         ]
       },
-      "time": "2026-10-22 21:11:30",
+      "time": "2026-10-22 21:16:31",
       "symbol": "SOL-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
       "maxScore": 12,
-      "price": 104.4,
+      "price": 104.25,
       "trend": {
         "mode": "NEUTRAL",
         "close": 104.4,
@@ -16915,26 +16915,26 @@
       },
       "trigger": {
         "ok": false,
-        "close": 104.4,
-        "ema20": 104.45936257439993,
-        "atr": 0.3136409880036145,
+        "close": 104.25,
+        "ema20": 104.43942328157755,
+        "atr": 0.3198094888604986,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.4272279234752843,
+        "volumeRatio": 0.8626339900517352,
         "volumeOk": false,
         "prevHigh": 104.74,
         "prevLow": 104.37
       },
-      "funding": 0.0000106166506941,
-      "oiChange": -0.07395078280586498,
+      "funding": 0.0000110342097514,
+      "oiChange": -0.22382639407984017,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 676024.7799999998,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 676081.7799999998,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -20927,14 +20927,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 1.2947,
-            "high": 1.2955,
-            "low": 1.2915,
-            "close": 1.2939,
-            "volume": 7179.45
-          },
-          {
             "ts": 1792492200000,
             "open": 1.2939,
             "high": 1.2941,
@@ -22517,15 +22509,23 @@
             "low": 1.3249,
             "close": 1.3255,
             "volume": 12593.32
+          },
+          {
+            "ts": 1792670400000,
+            "open": 1.3256,
+            "high": 1.3274,
+            "low": 1.321,
+            "close": 1.3239,
+            "volume": 38284.45
           }
         ]
       },
-      "time": "2026-10-22 21:11:31",
+      "time": "2026-10-22 21:16:32",
       "symbol": "XRP-USDT-SWAP",
       "signal": "HOLD",
-      "score": 8,
+      "score": 9,
       "maxScore": 12,
-      "price": 1.3255,
+      "price": 1.3239,
       "trend": {
         "mode": "SHORT",
         "close": 1.3255,
@@ -22550,24 +22550,24 @@
         "swingHigh": 1.3511
       },
       "trigger": {
-        "ok": false,
-        "close": 1.3255,
-        "ema20": 1.3319436385692098,
-        "atr": 0.004042674410220218,
+        "ok": true,
+        "close": 1.3239,
+        "ema20": 1.331177577749062,
+        "atr": 0.004211054844076756,
         "breakoutOk": true,
         "emaOk": true,
-        "volumeRatio": 0.7285488162886716,
-        "volumeOk": false,
+        "volumeRatio": 2.214642523158777,
+        "volumeOk": true,
         "prevHigh": 1.3338,
-        "prevLow": 1.3267
+        "prevLow": 1.3249
       },
-      "funding": 0.0000476414769258,
-      "oiChange": 0.012681616594267808,
+      "funding": 0.0000476248939804,
+      "oiChange": 0.008431643585615767,
       "reference": {
         "stop": 1.3511,
-        "oneR": 1.2998999999999998,
-        "twoR": 1.2742999999999998,
-        "riskPct": 1.9313466616371233
+        "oneR": 1.2967000000000002,
+        "twoR": 1.2695000000000003,
+        "riskPct": 2.0545358410756016
       },
       "reasons": [
         "가격<EMA200",
@@ -22576,12 +22576,13 @@
         "ADX 27.6",
         "시장구조 유지",
         "15m 재돌파",
+        "거래량 2.21x",
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 1297384.9899999998,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 1288389.3699999996,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -26574,14 +26575,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 0.07903,
-            "high": 0.0791,
-            "low": 0.07889,
-            "close": 0.07903,
-            "volume": 11180.89
-          },
-          {
             "ts": 1792492200000,
             "open": 0.07903,
             "high": 0.07907,
@@ -28164,15 +28157,23 @@
             "low": 0.07918,
             "close": 0.07927,
             "volume": 10571.25
+          },
+          {
+            "ts": 1792670400000,
+            "open": 0.07926,
+            "high": 0.07935,
+            "low": 0.07911,
+            "close": 0.07929,
+            "volume": 8170.49
           }
         ]
       },
-      "time": "2026-10-22 21:11:32",
+      "time": "2026-10-22 21:16:33",
       "symbol": "DOGE-USDT-SWAP",
       "signal": "HOLD",
       "score": 6,
       "maxScore": 12,
-      "price": 0.07927,
+      "price": 0.07929,
       "trend": {
         "mode": "SHORT",
         "close": 0.07927,
@@ -28198,23 +28199,23 @@
       },
       "trigger": {
         "ok": false,
-        "close": 0.07927,
-        "ema20": 0.07938081658032317,
-        "atr": 0.0002623641242727325,
+        "close": 0.07929,
+        "ema20": 0.07937216738197313,
+        "atr": 0.00026076669368529275,
         "breakoutOk": false,
         "emaOk": true,
-        "volumeRatio": 0.3047528339563139,
+        "volumeRatio": 0.23701839343888886,
         "volumeOk": false,
-        "prevHigh": 0.07943,
+        "prevHigh": 0.07941,
         "prevLow": 0.07906
       },
-      "funding": -0.000037434669744,
-      "oiChange": -0.023989434199667148,
+      "funding": -0.0000378292182039,
+      "oiChange": -0.6933655059474741,
       "reference": {
         "stop": 0.08054,
-        "oneR": 0.07799999999999999,
-        "twoR": 0.07672999999999998,
-        "riskPct": 1.602119338968093
+        "oneR": 0.07804,
+        "twoR": 0.07679,
+        "riskPct": 1.576491360827344
       },
       "reasons": [
         "가격<EMA200",
@@ -28226,8 +28227,8 @@
       ]
     },
     {
-      "currentOI": 1221338.6000000003,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 1221547.2000000004,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -32220,14 +32221,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 0.2158,
-            "high": 0.216,
-            "low": 0.2152,
-            "close": 0.2157,
-            "volume": 7947.2
-          },
-          {
             "ts": 1792492200000,
             "open": 0.2157,
             "high": 0.2159,
@@ -33810,10 +33803,18 @@
             "low": 0.2163,
             "close": 0.2163,
             "volume": 8942.6
+          },
+          {
+            "ts": 1792670400000,
+            "open": 0.2164,
+            "high": 0.2167,
+            "low": 0.2157,
+            "close": 0.2163,
+            "volume": 17210.3
           }
         ]
       },
-      "time": "2026-10-22 21:11:34",
+      "time": "2026-10-22 21:16:35",
       "symbol": "ADA-USDT-SWAP",
       "signal": "HOLD",
       "score": 6,
@@ -33845,17 +33846,17 @@
       "trigger": {
         "ok": false,
         "close": 0.2163,
-        "ema20": 0.21684206581364324,
-        "atr": 0.0009133528765674882,
+        "ema20": 0.21679044049761007,
+        "atr": 0.0009195419760904211,
         "breakoutOk": false,
         "emaOk": true,
-        "volumeRatio": 0.5328474351361957,
+        "volumeRatio": 1.0426709115941348,
         "volumeOk": false,
         "prevHigh": 0.2175,
-        "prevLow": 0.2159
+        "prevLow": 0.2162
       },
-      "funding": -0.0002096922677903,
-      "oiChange": 0.031139472073737906,
+      "funding": -0.0002031931434625,
+      "oiChange": 0.017079620671944795,
       "reference": {
         "stop": 0.2218,
         "oneR": 0.2108,
@@ -33872,8 +33873,8 @@
       ]
     },
     {
-      "currentOI": 1703917.4000000004,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 1704233.8000000003,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -37866,14 +37867,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 9.418,
-            "high": 9.431,
-            "low": 9.402,
-            "close": 9.418,
-            "volume": 18703.4
-          },
-          {
             "ts": 1792492200000,
             "open": 9.418,
             "high": 9.418,
@@ -39456,15 +39449,23 @@
             "low": 9.231,
             "close": 9.231,
             "volume": 11161.7
+          },
+          {
+            "ts": 1792670400000,
+            "open": 9.232,
+            "high": 9.246,
+            "low": 9.213,
+            "close": 9.23,
+            "volume": 18994.5
           }
         ]
       },
-      "time": "2026-10-22 21:11:35",
+      "time": "2026-10-22 21:16:37",
       "symbol": "AVAX-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
       "maxScore": 12,
-      "price": 9.231,
+      "price": 9.23,
       "trend": {
         "mode": "NEUTRAL",
         "close": 9.231,
@@ -39490,26 +39491,26 @@
       },
       "trigger": {
         "ok": false,
-        "close": 9.231,
-        "ema20": 9.264899142710984,
-        "atr": 0.039977578034587034,
+        "close": 9.23,
+        "ema20": 9.261575414786698,
+        "atr": 0.03947918074887053,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.31012664910290916,
+        "volumeRatio": 0.531894785389716,
         "volumeOk": false,
-        "prevHigh": 9.274,
+        "prevHigh": 9.267,
         "prevLow": 9.207
       },
-      "funding": -0.0001362486112317,
-      "oiChange": -0.05341887548662161,
+      "funding": -0.0001339765167125,
+      "oiChange": 0.018568975233179685,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 1944733.0000000002,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 1943718.5000000002,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -43502,14 +43503,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 11.93,
-            "high": 11.946,
-            "low": 11.9,
-            "close": 11.926,
-            "volume": 15084.3
-          },
-          {
             "ts": 1792492200000,
             "open": 11.926,
             "high": 11.926,
@@ -45092,15 +45085,23 @@
             "low": 12.022,
             "close": 12.039,
             "volume": 16964.1
+          },
+          {
+            "ts": 1792670400000,
+            "open": 12.039,
+            "high": 12.061,
+            "low": 12.026,
+            "close": 12.044,
+            "volume": 17377.2
           }
         ]
       },
-      "time": "2026-10-22 21:11:36",
+      "time": "2026-10-22 21:16:38",
       "symbol": "LINK-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
       "maxScore": 12,
-      "price": 12.039,
+      "price": 12.044,
       "trend": {
         "mode": "NEUTRAL",
         "close": 12.039,
@@ -45126,26 +45127,26 @@
       },
       "trigger": {
         "ok": false,
-        "close": 12.039,
-        "ema20": 12.090755338641694,
-        "atr": 0.046859280078320485,
+        "close": 12.044,
+        "ema20": 12.08630244921364,
+        "atr": 0.046012189137438445,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.5514158796695683,
+        "volumeRatio": 0.5664524307837943,
         "volumeOk": false,
         "prevHigh": 12.096,
-        "prevLow": 12.035
+        "prevLow": 12.022
       },
-      "funding": -0.0000388322123991,
-      "oiChange": -0.004982440880818562,
+      "funding": -0.0000376539767098,
+      "oiChange": -0.05216654419912814,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 6569026,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 6583556,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -49138,14 +49139,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 1.1332,
-            "high": 1.1367,
-            "low": 1.1326,
-            "close": 1.1357,
-            "volume": 33713
-          },
-          {
             "ts": 1792492200000,
             "open": 1.1358,
             "high": 1.1383,
@@ -50728,15 +50721,23 @@
             "low": 1.1259,
             "close": 1.1264,
             "volume": 144940
+          },
+          {
+            "ts": 1792670400000,
+            "open": 1.1264,
+            "high": 1.1304,
+            "low": 1.1228,
+            "close": 1.1252,
+            "volume": 235158
           }
         ]
       },
-      "time": "2026-10-22 21:11:38",
+      "time": "2026-10-22 21:16:40",
       "symbol": "DOT-USDT-SWAP",
       "signal": "HOLD",
-      "score": 3,
+      "score": 4,
       "maxScore": 12,
-      "price": 1.1264,
+      "price": 1.1252,
       "trend": {
         "mode": "NEUTRAL",
         "close": 1.1264,
@@ -50762,28 +50763,29 @@
       },
       "trigger": {
         "ok": false,
-        "close": 1.1264,
-        "ema20": 1.1199124470707602,
-        "atr": 0.005440168509113321,
+        "close": 1.1252,
+        "ema20": 1.1204160235386436,
+        "atr": 0.005594442477334089,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.780564409354171,
-        "volumeOk": false,
-        "prevHigh": 1.1291,
+        "volumeRatio": 1.27805691956097,
+        "volumeOk": true,
+        "prevHigh": 1.1292,
         "prevLow": 1.1164
       },
-      "funding": -0.0002340819341504,
-      "oiChange": 0.20134762576065057,
+      "funding": -0.0002293774365291,
+      "oiChange": 0.22118956448033966,
       "reference": null,
       "reasons": [
         "RSI 43.1",
-        "OI +0.20%",
+        "거래량 1.28x",
+        "OI +0.22%",
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 487128.8000000004,
-      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
+      "currentOI": 487007.3000000004,
+      "oiBaselineAt": "2026-10-22T12:11:39.697Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -54776,14 +54778,6 @@
         ],
         "15m": [
           {
-            "ts": 1792491300000,
-            "open": 59.06,
-            "high": 59.14,
-            "low": 58.99,
-            "close": 59.04,
-            "volume": 1574.7
-          },
-          {
             "ts": 1792492200000,
             "open": 59.05,
             "high": 59.05,
@@ -56366,15 +56360,23 @@
             "low": 59.36,
             "close": 59.36,
             "volume": 1115
+          },
+          {
+            "ts": 1792670400000,
+            "open": 59.36,
+            "high": 59.46,
+            "low": 59.23,
+            "close": 59.29,
+            "volume": 2241.7
           }
         ]
       },
-      "time": "2026-10-22 21:11:39",
+      "time": "2026-10-22 21:16:41",
       "symbol": "LTC-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
       "maxScore": 12,
-      "price": 59.36,
+      "price": 59.29,
       "trend": {
         "mode": "NEUTRAL",
         "close": 59.36,
@@ -56400,18 +56402,18 @@
       },
       "trigger": {
         "ok": false,
-        "close": 59.36,
-        "ema20": 59.6055080945467,
-        "atr": 0.2110648827992743,
+        "close": 59.29,
+        "ema20": 59.575459704298616,
+        "atr": 0.21241740052613536,
         "breakoutOk": false,
         "emaOk": false,
-        "volumeRatio": 0.15643578942199438,
+        "volumeRatio": 0.3218280903651128,
         "volumeOk": false,
-        "prevHigh": 59.67,
+        "prevHigh": 59.57,
         "prevLow": 59.22
       },
       "funding": 0.0001,
-      "oiChange": -0.022186332767482053,
+      "oiChange": -0.02494206870954363,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
