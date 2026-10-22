@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "source": "OKX",
-  "updatedAt": "2026-10-22T12:06:41.101Z",
-  "updatedAtKST": "2026-10-22 21:06:41",
+  "updatedAt": "2026-10-22T12:11:39.697Z",
+  "updatedAtKST": "2026-10-22 21:11:39",
   "timezone": "Asia/Seoul",
   "status": "ok",
   "requestedSymbols": [
@@ -25,8 +25,8 @@
   "oiChangeUnit": "percent",
   "results": [
     {
-      "currentOI": 3045409.6300000115,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 3044143.890000011,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -5612,10 +5612,10 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:27",
+      "time": "2026-10-22 21:11:27",
       "symbol": "BTC-USDT-SWAP",
       "signal": "HOLD",
-      "score": 2,
+      "score": 1,
       "maxScore": 12,
       "price": 81712.1,
       "trend": {
@@ -5653,17 +5653,16 @@
         "prevHigh": 82154.3,
         "prevLow": 81800.8
       },
-      "funding": 0.0000501657434965,
-      "oiChange": 0.41410151251932703,
+      "funding": 0.0000504955627463,
+      "oiChange": -0.04156222491490391,
       "reference": null,
       "reasons": [
-        "OI +0.41%",
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 5979661.790000017,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 5984057.440000017,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -11249,10 +11248,10 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:30",
+      "time": "2026-10-22 21:11:28",
       "symbol": "ETH-USDT-SWAP",
       "signal": "HOLD",
-      "score": 2,
+      "score": 1,
       "maxScore": 12,
       "price": 2399.17,
       "trend": {
@@ -11290,17 +11289,16 @@
         "prevHigh": 2412.24,
         "prevLow": 2400.06
       },
-      "funding": 0.0000048146500697,
-      "oiChange": 0.20538960001204032,
+      "funding": 0.0000051086051785,
+      "oiChange": 0.07351001033790716,
       "reference": null,
       "reasons": [
-        "OI +0.21%",
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 2984201.0000000005,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 2981994.16,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -16886,7 +16884,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:31",
+      "time": "2026-10-22 21:11:30",
       "symbol": "SOL-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
@@ -16927,16 +16925,16 @@
         "prevHigh": 104.74,
         "prevLow": 104.37
       },
-      "funding": 0.0000089972160475,
-      "oiChange": -0.2481634463612048,
+      "funding": 0.0000106166506941,
+      "oiChange": -0.07395078280586498,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 675939.0599999997,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 676024.7799999998,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -22522,7 +22520,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:32",
+      "time": "2026-10-22 21:11:31",
       "symbol": "XRP-USDT-SWAP",
       "signal": "HOLD",
       "score": 8,
@@ -22563,8 +22561,8 @@
         "prevHigh": 1.3338,
         "prevLow": 1.3267
       },
-      "funding": 0.0000466356081187,
-      "oiChange": -1.1061325329191796,
+      "funding": 0.0000476414769258,
+      "oiChange": 0.012681616594267808,
       "reference": {
         "stop": 1.3511,
         "oneR": 1.2998999999999998,
@@ -22582,8 +22580,8 @@
       ]
     },
     {
-      "currentOI": 1297696.2999999998,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 1297384.9899999998,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -28169,7 +28167,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:35",
+      "time": "2026-10-22 21:11:32",
       "symbol": "DOGE-USDT-SWAP",
       "signal": "HOLD",
       "score": 6,
@@ -28210,8 +28208,8 @@
         "prevHigh": 0.07943,
         "prevLow": 0.07906
       },
-      "funding": -0.0000385380815669,
-      "oiChange": 0.014671223778761622,
+      "funding": -0.000037434669744,
+      "oiChange": -0.023989434199667148,
       "reference": {
         "stop": 0.08054,
         "oneR": 0.07799999999999999,
@@ -28228,8 +28226,8 @@
       ]
     },
     {
-      "currentOI": 1220958.4000000004,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 1221338.6000000003,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -33815,7 +33813,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:36",
+      "time": "2026-10-22 21:11:34",
       "symbol": "ADA-USDT-SWAP",
       "signal": "HOLD",
       "score": 6,
@@ -33856,8 +33854,8 @@
         "prevHigh": 0.2175,
         "prevLow": 0.2159
       },
-      "funding": -0.0002123649051366,
-      "oiChange": 0.18398870746025864,
+      "funding": -0.0002096922677903,
+      "oiChange": 0.031139472073737906,
       "reference": {
         "stop": 0.2218,
         "oneR": 0.2108,
@@ -33874,8 +33872,8 @@
       ]
     },
     {
-      "currentOI": 1704828.1000000003,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 1703917.4000000004,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -39461,7 +39459,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:37",
+      "time": "2026-10-22 21:11:35",
       "symbol": "AVAX-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
@@ -39502,16 +39500,16 @@
         "prevHigh": 9.274,
         "prevLow": 9.207
       },
-      "funding": -0.0001374964321934,
-      "oiChange": 0.023620862278828092,
+      "funding": -0.0001362486112317,
+      "oiChange": -0.05341887548662161,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 1944829.9000000001,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 1944733.0000000002,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -45097,7 +45095,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:38",
+      "time": "2026-10-22 21:11:36",
       "symbol": "LINK-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
@@ -45138,16 +45136,16 @@
         "prevHigh": 12.096,
         "prevLow": 12.035
       },
-      "funding": -0.0000386895586551,
-      "oiChange": -0.06040579332411422,
+      "funding": -0.0000388322123991,
+      "oiChange": -0.004982440880818562,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 6555826,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 6569026,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -50733,7 +50731,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:39",
+      "time": "2026-10-22 21:11:38",
       "symbol": "DOT-USDT-SWAP",
       "signal": "HOLD",
       "score": 3,
@@ -50774,18 +50772,18 @@
         "prevHigh": 1.1291,
         "prevLow": 1.1164
       },
-      "funding": -0.000236297504145,
-      "oiChange": 0.22568193798440106,
+      "funding": -0.0002340819341504,
+      "oiChange": 0.20134762576065057,
       "reference": null,
       "reasons": [
         "RSI 43.1",
-        "OI +0.23%",
+        "OI +0.20%",
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 487236.9000000004,
-      "oiBaselineAt": "2026-10-22T12:03:19.959Z",
+      "currentOI": 487128.8000000004,
+      "oiBaselineAt": "2026-10-22T12:06:41.101Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -56371,7 +56369,7 @@
           }
         ]
       },
-      "time": "2026-10-22 21:06:41",
+      "time": "2026-10-22 21:11:39",
       "symbol": "LTC-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
@@ -56413,7 +56411,7 @@
         "prevLow": 59.22
       },
       "funding": 0.0001,
-      "oiChange": -0.028663665838701835,
+      "oiChange": -0.022186332767482053,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
