@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "source": "OKX",
-  "updatedAt": "2026-10-22T11:55:28.119Z",
-  "updatedAtKST": "2026-10-22 20:55:28",
+  "updatedAt": "2026-10-22T11:56:04.702Z",
+  "updatedAtKST": "2026-10-22 20:56:04",
   "timezone": "Asia/Seoul",
   "status": "ok",
   "requestedSymbols": [
@@ -18,8 +18,8 @@
   "oiChangeUnit": "percent",
   "results": [
     {
-      "currentOI": 3029597.070000011,
-      "oiBaselineAt": null,
+      "currentOI": 3029859.000000011,
+      "oiBaselineAt": "2026-10-22T11:55:28.119Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -5605,7 +5605,7 @@
           }
         ]
       },
-      "time": "2026-10-22 20:55:25",
+      "time": "2026-10-22 20:56:01",
       "symbol": "BTC-USDT-SWAP",
       "signal": "HOLD",
       "score": 2,
@@ -5647,7 +5647,7 @@
         "prevLow": 81802
       },
       "funding": 0.0000495297088433,
-      "oiChange": null,
+      "oiChange": 0.00864570416290178,
       "reference": null,
       "reasons": [
         "ADX 22.8",
@@ -5655,8 +5655,8 @@
       ]
     },
     {
-      "currentOI": 5963641.080000018,
-      "oiBaselineAt": null,
+      "currentOI": 5951708.980000016,
+      "oiBaselineAt": "2026-10-22T11:55:28.119Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -11242,7 +11242,7 @@
           }
         ]
       },
-      "time": "2026-10-22 20:55:26",
+      "time": "2026-10-22 20:56:03",
       "symbol": "ETH-USDT-SWAP",
       "signal": "HOLD",
       "score": 1,
@@ -11284,15 +11284,15 @@
         "prevLow": 2400.06
       },
       "funding": 0.0000032305653407,
-      "oiChange": null,
+      "oiChange": -0.20008078688735775,
       "reference": null,
       "reasons": [
         "Funding 과열아님"
       ]
     },
     {
-      "currentOI": 2993888.5,
-      "oiBaselineAt": null,
+      "currentOI": 2993727.55,
+      "oiBaselineAt": "2026-10-22T11:55:28.119Z",
       "missingFields": [],
       "candles": {
         "4H": [
@@ -16878,7 +16878,7 @@
           }
         ]
       },
-      "time": "2026-10-22 20:55:28",
+      "time": "2026-10-22 20:56:04",
       "symbol": "SOL-USDT-SWAP",
       "signal": "HOLD",
       "score": 6,
@@ -16920,7 +16920,7 @@
         "prevLow": 104.21
       },
       "funding": 0.0000060717965899,
-      "oiChange": null,
+      "oiChange": -0.005375951709629678,
       "reference": {
         "stop": 106.21,
         "oneR": 102.91000000000001,
